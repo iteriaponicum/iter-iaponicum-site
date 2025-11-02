@@ -1,0 +1,169 @@
+/* === Iter Iaponicum – Stile Accademico Minimalista (Avorio) === */
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #f9f6f0; /* avorio chiaro */
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('TENRI_CALVINO_Institutione_GINEVRA1557.jpg') center/cover no-repeat;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+header.hero {
+  text-align: center;
+  padding: 2em 1em 1.5em;
+  background-color: rgba(255, 255, 255, 0.85);
+  max-width: 950px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header.hero .logo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+header.hero h1 {
+  font-size: 1.8em;
+  color: #002b5c;
+  margin: 0.2em 0;
+}
+
+header.hero h2 {
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.language-switcher button {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.language-switcher button:hover {
+  background: #ddd;
+}
+
+.main-menu {
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 1em;
+}
+
+.main-menu ul li a, .main-menu ul li {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.main-menu ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #003e7e;
+  padding: 0.5em;
+  border-radius: 6px;
+  text-align: left;
+  z-index: 5;
+}
+
+.main-menu ul li:hover ul {
+  display: block;
+}
+
+.main-menu ul li ul li {
+  display: block;
+  margin: 0.3em 0;
+}
+
+.main-menu ul li ul li a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+}
+
+main.content {
+  max-width: 950px;
+  margin: 2em auto;
+  padding: 1em 2em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.banner {
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.banner-text a {
+  color: #0a55c6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner-text a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  padding: 2em 0 1em;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 3em;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-menu ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .hamburger {
+    display: block;
+    background: #002b5c;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+}
