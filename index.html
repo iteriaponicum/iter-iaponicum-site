@@ -8,88 +8,64 @@
   <script src="lang-switch.js" defer></script>
 </head>
 <body>
-  <div class="page-background"></div>
 
-  <header class="hero">
-    <img src="TENRI_ms_Sfera_homepage_02.jpg" alt="Logo Iter Iaponicum" class="logo">
-    <h1>Iter Iaponicum</h1>
-    <h2><em>Censimento del libro italiano antico in Giappone</em></h2>
-    <div class="language-switcher">
-      <button data-lang="it">IT</button>
-      <button data-lang="en">EN</button>
-      <button data-lang="jp">日本語</button>
+  <header>
+    <img src="TENRI_ms_Sfera_homepage_02.jpg" alt="Iter Iaponicum logo" class="logo">
+    <h1><em>Iter Iaponicum</em></h1>
+    <h2>Censimento del libro italiano antico in Giappone</h2>
+    <div class="language-selector">
+      <button onclick="switchLanguage('it')">IT</button>
+      <button onclick="switchLanguage('en')">EN</button>
+      <button onclick="switchLanguage('jp')">日本語</button>
     </div>
   </header>
 
-  <nav class="main-menu">
-    <button class="hamburger">☰</button>
-    <ul>
-      <li><a href="progetto.html">PROGETTO</a>
-        <ul>
-          <li><a href="progetto.html#presentazione">Presentazione</a></li>
-          <li><a href="progetto.html#collaboratori">Collaboratori</a></li>
-          <li><a href="progetto.html#crediti">Crediti</a></li>
-        </ul>
-      </li>
-      <li>LIBRI
-        <ul>
-          <li><a href="#">Manoscritti</a></li>
-          <li><a href="#">Incunaboli</a></li>
-          <li><a href="#">Cinquecentine</a></li>
-        </ul>
-      </li>
-      <li>PERSONE
-        <ul>
-          <li><a href="#">Autori</a></li>
-          <li><a href="#">Editori</a></li>
-          <li><a href="#">Possessori</a></li>
-          <li><a href="#">Studiosi</a></li>
-        </ul>
-      </li>
-      <li>RICERCA
-        <ul>
-          <li><a href="#">Semplice</a></li>
-          <li><a href="#">Avanzata</a></li>
-        </ul>
-      </li>
-      <li><a href="#">LEGATURE E CARTE DECORATE</a></li>
-      <li>EVENTI E NOVITÀ EDITORIALI
-        <ul>
-          <li><a href="#">Convegni</a></li>
-          <li><a href="#">Pubblicazioni</a></li>
-          <li><a href="#">Notizie</a></li>
-        </ul>
-      </li>
-    </ul>
+  <nav>
+    <a href="progetto.html">PROGETTO</a>
+    <a href="#">LIBRI</a>
+    <a href="#">PERSONE</a>
+    <a href="#">RICERCA</a>
+    <a href="#">LEGATURE E CARTE DECORATE</a>
+    <a href="#">EVENTI E NOVITÀ</a>
   </nav>
 
-  <main class="content">
+  <main class="main-container">
     <section class="banner">
-      <div class="banner-text lang-it">
-        <p><em>Iter Iaponicum</em> è il primo progetto di catalogazione unificata di manoscritti, incunaboli e cinquecentine in lingua italiana conservati nelle biblioteche giapponesi. L’Iter, avviato nel 2019 e coordinato da Marco Limongelli, si propone non solo di descrivere gli esemplari dal punto di vista bibliografico e editoriale, ma anche di documentare le tracce materiali che rendono ogni copia un oggetto unico: note di possesso, timbri, ex libris, postille, appendici manoscritte e altri segni d’uso e circolazione.</p>
+      <div class="lang lang-it">
+        <p><strong>Iter Iaponicum</strong> è il primo progetto di catalogazione unificata di manoscritti, incunaboli e cinquecentine in lingua italiana conservati nelle biblioteche giapponesi. L’Iter, avviato nel 2019 e coordinato da Marco Limongelli, si propone non solo di descrivere gli esemplari dal punto di vista bibliografico e editoriale, ma anche di documentare le tracce materiali che rendono ogni copia un oggetto unico: note di possesso, timbri, ex libris, postille, appendici manoscritte e altri segni d’uso e circolazione.</p>
+
         <p>Il modello di descrizione è definito sulla base di specifici interessi filologici e storico-letterari e prevede una descrizione bibliografica dei singoli libri, seguita da indicazioni dettagliate sul contenuto dei testi (collocazione, rubriche, incipit, forma metrica e schema rimico), la fondatezza delle attribuzioni e gli autori. Il sistema è in grado di produrre per ciascun testo un quadro riassuntivo delle occorrenze nelle diverse raccolte.</p>
+
         <p>È disponibile un modulo di ricerca che consente di interrogare i dati incrociando i diversi indicatori (libro, autore, incipit, metro e schema rimico) e offre in risposta la visualizzazione dei risultati. Da ciascun incipit si ha accesso a una riproduzione fotografica dell'edizione originale (la funzione è disponibile attualmente solo per alcuni volumi).</p>
-        <p><a href="progetto.html#presentazione">Maggiori informazioni sul progetto</a></p>
+
+        <p><a href="progetto.html">Maggiori informazioni sul progetto</a></p>
       </div>
 
-      <div class="banner-text lang-en hidden">
-        <p><em>Iter Iaponicum</em> is the first unified cataloging project of Italian-language manuscripts, incunabula, and sixteenth-century books preserved in Japanese libraries. Initiated in 2019 under the direction of Marco Limongelli, the project aims not only to describe the items from a bibliographical and editorial perspective but also to document the material traces that make each copy unique: ownership notes, stamps, ex libris, marginalia, handwritten appendices, and other marks of use and circulation.</p>
-        <p>The descriptive model, based on specific philological and literary-historical interests, provides a bibliographic description of each book, followed by detailed information on the textual content (location, rubrics, incipit, metrical form, and rhyme scheme), the reliability of attributions, and authorship. The system can produce, for each text, a summary of its occurrences across different collections.</p>
-        <p>A search module is available that allows users to cross-reference various indicators (book, author, incipit, meter, rhyme scheme) and view the corresponding results. Each incipit gives access to a photographic reproduction of the original edition (currently available only for some volumes).</p>
-        <p><a href="progetto.html#presentazione">More about the project</a></p>
+      <div class="lang lang-en" style="display:none;">
+        <p><strong>Iter Iaponicum</strong> is the first unified cataloguing project of Italian-language manuscripts, incunabula and sixteenth-century books preserved in Japanese libraries. Launched in 2019 and coordinated by Marco Limongelli, the Iter aims not only to describe the items from a bibliographical and editorial perspective, but also to record the material traces that make each copy unique: ownership notes, stamps, ex libris, marginalia, manuscript appendices, and other signs of use and circulation.</p>
+
+        <p>The description model is defined on the basis of specific philological and literary-historical interests and provides for a bibliographic description of individual books, followed by detailed indications on the content of the texts (location, rubrics, incipits, metrical form and rhyme scheme), the reliability of attributions, and the authors. The system can generate a summary of occurrences for each text across the different collections.</p>
+
+        <p>A search module allows users to query the data by combining different indicators (book, author, incipit, meter, and rhyme scheme) and displays the results accordingly. From each incipit, users can access a photographic reproduction of the original edition (currently available only for selected volumes).</p>
+
+        <p><a href="progetto.html">More information about the project</a></p>
       </div>
 
-      <div class="banner-text lang-jp hidden">
-        <p><em>Iter Iaponicum</em>（イテル・イアポニクム）は、日本の図書館に所蔵されているイタリア語の写本・インキュナブラ・16世紀刊本を対象とした、初の統合的な書誌プロジェクトです。2019年にマルコ・リモンジェッリの指導のもとに開始され、本プロジェクトは書誌学的・編集的観点から資料を記述するだけでなく、各写本や書籍を唯一無二の存在とする物質的痕跡——所蔵者の書き込み、蔵書印、エクスリブリス、書き込み、手書きの付録など——を記録することを目的としています。</p>
-        <p>記述モデルは、特定の文献学的および文学史的関心に基づいて定義され、各書籍の書誌的記述に加え、内容（所蔵先、ルブリック、インキピット、韻律形式、韻構造）、帰属の妥当性、著者に関する詳細な情報を提供します。システムは各テキストの出現状況を異なるコレクション間で要約して示すことができます。</p>
-        <p>また、検索モジュールを利用することで、書籍・著者・インキピット・韻律・韻構造などの指標を横断的に照会し、結果を表示できます。各インキピットからは原版の写真画像にアクセスできます（現時点では一部の巻のみ対応しています）。</p>
-        <p><a href="progetto.html#presentazione">プロジェクトの詳細</a></p>
+      <div class="lang lang-jp" style="display:none;">
+        <p><strong>Iter Iaponicum</strong> は、日本の図書館に所蔵されているイタリア語の写本・インキュナブラ・16世紀刊本を統合的にカタログ化する最初のプロジェクトです。2019年に開始され、Marco Limongelli の指導のもとに進められており、書誌的・編集的な観点から資料を記述するだけでなく、各冊を唯一無二の存在とする物質的痕跡（蔵書票、印章、手書き注記、書き込み、補遺など）を記録することを目的としています。</p>
+
+        <p>この記述モデルは、文献学的および文学史的関心に基づいて定義されており、個々の書籍の書誌記述に加えて、本文内容（所在、ルブリック、インキピット、韻律形式、脚韻構造）、著作帰属の信頼性、著者情報などの詳細を提供します。システムは、各テキストの出現状況を異なるコレクション間でまとめた概要を生成することができます。</p>
+
+        <p>検索モジュールでは、書名、著者、インキピット、韻律、脚韻構造などの指標を組み合わせてデータを検索し、結果を表示することが可能です。各インキピットからは原版の写真画像にアクセスできる機能もあります（現在は一部の巻のみ対応しています）。</p>
+
+        <p><a href="progetto.html">プロジェクトの詳細情報</a></p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© Iter Iaponicum | 2019–2025</p>
+    © Iter Iaponicum | 2019–2025
   </footer>
+
 </body>
 </html>
